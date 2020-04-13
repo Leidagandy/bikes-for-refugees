@@ -72,7 +72,6 @@ button {
   border-radius: 0;
   background-image: url("../images/header-bike.jpg");
   color: white;
-  height: 35%;
 }
 
 /* Headings */
@@ -98,8 +97,15 @@ button {
 }
 
 /* Article */
-.article {
+
+.sidebar .article {
   margin-bottom: 2em;
+  display: flex; /* added display flex */
+}
+
+.img-fluid {
+  max-width: 100px;
+  margin-right: 15px; /* added margim-right */
 }
 
 .article__title {
@@ -125,6 +131,21 @@ button {
 
 .article__read-more:last-child {
   margin-bottom: 0;
+}
+
+/* used the following 3 styles to style the main articles  */
+.article-boxes {
+  display: flex;
+}
+
+.article-boxes .article {
+  border: 1px solid gainsboro;
+  padding: 20px;
+}
+
+.first-box {
+  background-color: gainsboro;
+  margin-right: 35px;
 }
 
 /* Footer */
